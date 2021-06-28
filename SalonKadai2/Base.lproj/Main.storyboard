@@ -35,12 +35,8 @@
                                     <segment title="÷"/>
                                 </segments>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I29-3c-qH9">
-                                <rect key="frame" x="120" y="207" width="174" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMW-BG-01y">
-                                <rect key="frame" x="20" y="243" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未入力が２箇所あります" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMW-BG-01y">
+                                <rect key="frame" x="20" y="207" width="191" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -52,11 +48,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tV2-8a-SAu" secondAttribute="trailing" constant="120" id="5UF-JC-AvU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PL7-8b-h3a" secondAttribute="trailing" constant="120" id="HqT-Ot-Urs"/>
                             <constraint firstItem="tV2-8a-SAu" firstAttribute="top" secondItem="PL7-8b-h3a" secondAttribute="bottom" constant="8" symbolic="YES" id="O6s-qb-T2e"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I29-3c-qH9" secondAttribute="trailing" constant="120" id="PHh-6H-MxC"/>
-                            <constraint firstItem="XMW-BG-01y" firstAttribute="top" secondItem="I29-3c-qH9" secondAttribute="bottom" constant="6" id="S6f-UI-3jr"/>
                             <constraint firstItem="PL7-8b-h3a" firstAttribute="top" secondItem="z3K-2D-BXb" secondAttribute="bottom" constant="8" symbolic="YES" id="U38-bi-NWg"/>
-                            <constraint firstItem="I29-3c-qH9" firstAttribute="top" secondItem="tV2-8a-SAu" secondAttribute="bottom" constant="8" symbolic="YES" id="UVp-gW-3gm"/>
-                            <constraint firstItem="I29-3c-qH9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="jY3-eG-30d"/>
+                            <constraint firstItem="XMW-BG-01y" firstAttribute="top" secondItem="tV2-8a-SAu" secondAttribute="bottom" constant="8" symbolic="YES" id="ZMX-J3-vLD"/>
                             <constraint firstItem="XMW-BG-01y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nC7-Vq-dET"/>
                             <constraint firstItem="PL7-8b-h3a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="qeW-xr-tcq"/>
                             <constraint firstItem="z3K-2D-BXb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="sBI-mN-4Sd"/>
@@ -65,6 +58,12 @@
                             <constraint firstItem="tV2-8a-SAu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="xWE-nq-f6D"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="firstNumberTextField" destination="z3K-2D-BXb" id="sv4-p6-K0V"/>
+                        <outlet property="fourArithmeticOperationsSecmentedControl" destination="tV2-8a-SAu" id="uIV-hD-3F0"/>
+                        <outlet property="resultLabel" destination="XMW-BG-01y" id="mna-s8-0yR"/>
+                        <outlet property="secondNumberTextField" destination="PL7-8b-h3a" id="jJQ-gR-Eyz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
