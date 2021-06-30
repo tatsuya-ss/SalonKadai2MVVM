@@ -63,9 +63,9 @@ final class Model: ModelProtocol {
                 let stringResult = String(result)
                 return .success(stringResult)
             case (false, true):
-                return .failure(ModelError.invalidFirstNumber)
-            case (true, false):
                 return .failure(ModelError.invalidSecondNumber)
+            case (true, false):
+                return .failure(ModelError.invalidFirstNumber)
             }
         }
     }
