@@ -47,9 +47,9 @@ extension ModelError {
         case .invalidBothNumbers:
             return "未入力が２箇所あります"
         case .invalidFirstNumber:
-            return "2つ目が未入力です"
-        case .invalidSecondNumber:
             return "1つ目が未入力です"
+        case .invalidSecondNumber:
+            return "2つ目が未入力です"
         case .invalidDividedByZero:
             return "割る数には０以外の数字を入力してください"
         }
